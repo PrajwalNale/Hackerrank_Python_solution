@@ -1,0 +1,14 @@
+tbl = []
+rc = input()
+(r,c) = map(int, rc.split())
+
+for i in range(r):
+    _row = input()
+    row = list(map(int, _row.split()))
+    tbl.append(row)
+
+idx = int(input())
+    
+tbls = sorted(tbl, key = lambda x: x[idx])
+for t in tbls:
+    print (*t)
