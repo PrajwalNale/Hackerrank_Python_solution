@@ -1,0 +1,6 @@
+from cmath import phase
+
+inp = raw_input()
+
+print round(abs(complex(inp)),3)
+print round(phase(complex(inp)),3)
